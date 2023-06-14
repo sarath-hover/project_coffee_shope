@@ -73,7 +73,7 @@ body{
 /* navigation bar  */
 
 .header .navbar a {
- margin: 0.1rem;
+ margin: 0 1rem;
  font-size: 1.6rem ;
  color: #fff;
 }
@@ -94,9 +94,9 @@ body{
 .header .icons div:hover {
     color: var(--main-color);
 }
-/* #menu-btn{
+#menu-btn{
     display: none;
-} */
+}
 
 /* form section  */
 
@@ -111,6 +111,9 @@ body{
     transform: scaleY(0);
     transform-origin: top;
 
+}
+.header .search-form.active {
+    transform: scaleY(1);
 }
 .header .search-form input {
     height: 100%;
@@ -141,6 +144,11 @@ body{
     padding: 0 1.5rem;
 
 }
+
+.header .cart-items-container.active{
+    right: 0;
+}
+
 .header .cart-items-container .cart-item {
     position: relative;
     margin: 2rem 0;
@@ -228,6 +236,9 @@ body{
     background: #fff;
     width: 30rem;
     height: calc(100vh - 9.5rem);
+   }
+   .header .navbar.active {
+      right:0;
    }
    .header .navbar a{
     color: var(--black);
